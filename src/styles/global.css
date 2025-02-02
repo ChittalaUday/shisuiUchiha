@@ -25,6 +25,7 @@
     --primary-color: #0078d7; /* Main brand color */
     --secondary-color: #ff8c00; /* Accent color */
     --background-color: #f9f9f9; /* Page background */
+    --second-background-color: #f4f4f4; /* Lighter background */
     --white: #ffffff; /* White for clean sections */
     --text-color: #333333; /* Default text color */
     --text-secondary: #555555; /* Secondary text */
@@ -38,6 +39,16 @@
     margin: 0 auto;
     padding: 0 20px;
   }
+
+  section{
+    background-color: var(--background-color);
+  }
+
+  section:nth-child(odd){
+    background-color: var(--second-background-color);
+  }
+
+
   
   
   h1, h2, h3, h4, h5, h6 {

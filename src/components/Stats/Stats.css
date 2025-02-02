@@ -1,6 +1,6 @@
 .stats-section {
     padding: 50px 20px;
-    background-color: #f4f4f4;
+    background-color: var(--background-color);
     text-align: center;
   }
   

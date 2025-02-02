@@ -16,18 +16,17 @@ const Homepage = () => {
 
   return (
     <div>
-      <HeroSection />
+       <HeroSection />
       <Clients />
-      <Stats />
       <AboutUs />
+      <WhyChooseUs />
       <Services />
+      <Stats />
       <Testimonials />
       <Pricing />
       <Resources />
       <ContactUs />
-      <WhyChooseUs />
-
-    </div>
+       </div>
   );
 };
 

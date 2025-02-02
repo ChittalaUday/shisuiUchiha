@@ -4,6 +4,7 @@
     display: flex;
     height: 80vh;
     color: white;
+    background-color: var(--secondary-background-color);
     padding: 20px;
     justify-content: center;
 

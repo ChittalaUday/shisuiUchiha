@@ -4,7 +4,7 @@ import heroImg from '../../assets/hero-grow-up.svg';
 
 const HeroSection = () => {
   return (
-    <section className="hero-section">
+    <main className="hero-section">
       <div className="hero-content">
         <h1>Grow Your Business,</h1>
         <h1>Not Your Worries.</h1>
@@ -17,7 +17,7 @@ const HeroSection = () => {
       </div>
 
       <img src={heroImg} alt="hero" className="hero-img" />
-    </section>
+    </main>
   );
 };
 

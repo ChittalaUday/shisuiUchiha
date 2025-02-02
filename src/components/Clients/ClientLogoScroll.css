@@ -1,3 +1,30 @@
-.client-logos-container{
-    display: flex;
+.clients-heading{
+  text-align: center;
+  font-size: 2rem;
 }
+
+/* Container for the slider to ensure proper alignment and spacing */
+.slider-container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 0.8rem 0;
+    background-color: #f7fafc; /* Tailwind's bg-gray-100 */
+    max-width: 1200px;
+    margin-bottom: 24px;
+  }
+  
+  /* Styling for each logo image */
+  .slider-container img {
+    height: 4rem; /* Tailwind's h-16 */
+    width: auto;
+    object-fit: contain;
+    filter: grayscale(100%);
+    transition: filter 0.3s ease-in-out;
+  }
+  
+  /* Hover effect to remove grayscale filter */
+  .slider-container img:hover {
+    filter: grayscale(0%);
+  }
+  
