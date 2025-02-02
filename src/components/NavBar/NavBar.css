@@ -1,0 +1,168 @@
+@import url('../../styles/global.css');
+/* NavBar.css */
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 20px;
+  }
+  
+  .navbar-logo a {
+    color: #000;
+    font-size: 28px;
+    font-weight: bold;
+    text-decoration: none;
+  }
+  
+  .navbar-links {
+    list-style: none;
+    display: flex;
+    gap: 15px;
+  }
+  
+  .navbar-links a {
+    color: #000;
+    text-decoration: none;
+    font-size:16px;
+  }
+  
+  .navbar-links .btn-primary {
+    background-color: var(--primary-color);
+    padding: 10px 10px;
+    border-radius: 5px;
+    color: white;
+  }
+  
+  .navbar-links .btn-secondary {
+    background-color: var(--secondary-color);
+    padding: 10px 10px;
+    border-radius: 5px;
+    color: white;
+  }
+  .dropdown {
+    position: relative;
+    display: inline-block;
+  }
+  
+  .dropdown-content {
+    display: none;
+    position: absolute;
+    background-color: #f9f9f9;
+    min-width: 160px;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+    padding: 12px 16px;
+    z-index: 1;
+  }
+  
+  .dropdown:hover .dropdown-content {
+    display: block;
+  }
+  
+  .dropdown span {
+    background-image: url('../../assets/icons/chevron-down.svg');
+    display: inline-block;
+    width: 12px;
+    height: 12px;
+    margin-left: 2px;
+    vertical-align: middle;
+    transition: transform 0.2s ease-in-out;
+  }
+  
+  .dropdown:hover span {
+    transform: rotate(180deg); 
+  }
+  
+  .dropdown:hover .dropdown-menu {
+    display: block;
+  }
+
+  .dropdown-menu {
+    display: none;
+    position: absolute;
+    background-color: white;
+    color: black;
+    top: 100%;
+    left: 0;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    z-index: 10;
+    border-radius: 6px;
+    
+  }
+
+  .dropdown-menu li {
+    width: max-content;
+    color: black;
+    text-decoration: none;
+    list-style: none;
+    
+    padding: 8px 16px;
+  }
+  
+  .dropdown-menu li a {
+    color: black;
+  }
+
+  /* Hover underline animation for dropdown menu items */
+.dropdown-menu li a {
+  position: relative;
+  display: inline-block;
+  color: black;
+  text-decoration: none;
+  transition: color 0.3s ease;
+}
+
+.dropdown-menu li a::after {
+  content: '';
+  position: absolute;
+  left: 0;
+  bottom: 0;
+  width: 0;
+  height: 2px;
+  background: var(--secondary-color, #3498db); /* Use a fallback color if --primary-color is not defined */
+  transition: width 0.3s ease;
+}
+
+.dropdown-menu li a:hover {
+  color: var(--secondary-color, #3498db);
+}
+
+.dropdown-menu li a:hover::after {
+  width: 100%;
+}
+
+  
+/* Responsive styles */
+@media (max-width: 768px) {
+  .navbar {
+    flex-wrap: wrap;
+  }
+
+  .navbar-links {
+    display: none;
+    flex-direction: column;
+    gap: 10px;
+    width: 100%;
+  }
+
+  .navbar-links.active {
+    display: flex;
+  }
+
+  .hamburger {
+    display: block;
+    background: none;
+    border: none;
+    font-size: 24px;
+    cursor: pointer;
+  }
+
+  .navbar-logo {
+    flex: 1;
+  }
+}
+
+@media (min-width: 769px) {
+  .hamburger {
+    display: none;
+  }
+}

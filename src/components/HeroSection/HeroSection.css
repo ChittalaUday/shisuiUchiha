@@ -1,0 +1,92 @@
+@import url('../../styles/global.css');
+
+.hero-section {
+    display: flex;
+    height: 80vh;
+    color: white;
+    padding: 20px;
+    justify-content: center;
+
+}
+
+.hero-section img{
+    width: 100%;
+    max-width: 500px;
+    margin-bottom: 20px;
+}
+
+
+.hero-content {
+  max-width: 800px;
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+}
+
+
+
+.hero-content h1 {
+  font-size: 3rem;
+  margin-bottom: 20px;
+}
+
+.hero-content p {
+  font-size: 1.3rem;
+  margin-bottom: 30px;
+}
+
+.hero-cta {
+  display: flex;
+  gap: 15px;
+}
+
+.cta-btn {
+  padding: 10px 20px;
+  font-size: 1rem;
+  border: none;
+  cursor: pointer;
+  border-radius: 5px;
+}
+.cta-btn {
+  padding: 10px 20px;
+  font-size: 1rem;
+  border: none;
+  cursor: pointer;
+  border-radius: 5px;
+  position: relative;
+  overflow: hidden;
+  z-index: 0;
+  transition: color 0.3s ease-in-out;
+}
+
+.cta-btn::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: -100%;
+  width: 100%;
+  height: 100%;
+  background: var(--primary-color);
+  z-index: -1;
+  transition: left 0.5s ease-in-out;
+}
+
+.primary-btn {
+  color: white;
+  background-color: var(--secondary-color);
+}
+
+.primary-btn:hover::before {
+  left: 0;
+}
+
+.secondary-btn {
+  color: #000;
+  background-color: transparent;
+  border: 2px solid var(--secondary-color);
+}
+
+.secondary-btn:hover{
+  border: 2px solid var(--primary-color);
+}
+

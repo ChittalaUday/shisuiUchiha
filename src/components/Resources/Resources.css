@@ -1,0 +1,65 @@
+.resources-section {
+    padding: 50px 20px;
+    background-color: #f9f9f9;
+    text-align: center;
+  }
+  
+  .resources-heading {
+    font-size: 2rem;
+    margin-bottom: 30px;
+    color: #333;
+  }
+  
+  .resources-container {
+    display: flex;
+    justify-content: center;
+    gap: 30px;
+    flex-wrap: wrap;
+  }
+  
+  .resource-card {
+    background-color: white;
+    padding: 20px;
+    border: 1px solid #ddd;
+    border-radius: 10px;
+    width: 300px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease;
+  }
+  
+  .resource-card:hover {
+    transform: translateY(-5px);
+  }
+  
+  .resource-title {
+    font-size: 1.5rem;
+    color: #4caf50;
+    margin-bottom: 15px;
+  }
+  
+  .resource-description {
+    font-size: 1rem;
+    color: #555;
+    line-height: 1.5;
+  }
+  
+  .resource-link {
+    display: inline-block;
+    margin-top: 15px;
+    font-size: 1rem;
+    color: #4caf50;
+    text-decoration: none;
+    font-weight: bold;
+  }
+  
+  .resource-link:hover {
+    text-decoration: underline;
+  }
+  
+  @media (max-width: 768px) {
+    .resources-container {
+      flex-direction: column;
+      align-items: center;
+    }
+  }
+  

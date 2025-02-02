@@ -1,0 +1,276 @@
+@import url('https://fonts.googleapis.com/css2?family=Arimo:ital,wght@0,400..700;1,400..700&display=swap');
+
+/* Reset Styles for Consistency Across Browsers */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+  
+  html {
+    font-size: 16px; /* Base font size for rem calculations */
+    scroll-behavior: smooth;
+  }
+  
+  body {
+    font-family: "Arimo", serif;
+    line-height: 1.6;
+    color: var(--text-color);
+    background-color: var(--background-color);
+    overflow-x: hidden;
+  }
+  
+  /* Color Variables */
+  :root {
+    --primary-color: #0078d7; /* Main brand color */
+    --secondary-color: #ff8c00; /* Accent color */
+    --background-color: #f9f9f9; /* Page background */
+    --white: #ffffff; /* White for clean sections */
+    --text-color: #333333; /* Default text color */
+    --text-secondary: #555555; /* Secondary text */
+    --border-color: #dddddd; /* Light border */
+    --shadow-color: rgba(0, 0, 0, 0.1); /* Box shadows */
+  }
+  
+  /* Universal Elements */
+  .container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 20px;
+  }
+  
+  
+  h1, h2, h3, h4, h5, h6 {
+    margin-bottom: 20px;
+    color: var(--primary-color);
+    font-weight: bold;
+  }
+  
+  p {
+    color: var(--text-secondary);
+    margin-bottom: 15px;
+  }
+  
+  a {
+    text-decoration: none;
+    color: var(--primary-color);
+    transition: color 0.3s ease;
+  }
+  
+  a:hover {
+    color: var(--secondary-color);
+  }
+  
+  /* Buttons */
+  .btn {
+    display: inline-block;
+    padding: 12px 20px;
+    background-color: var(--primary-color);
+    color: var(--white);
+    text-transform: uppercase;
+    font-weight: bold;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+  }
+  
+  .btn:hover {
+    background-color: var(--secondary-color);
+  }
+  
+  .btn-outline {
+    background-color: transparent;
+    border: 2px solid var(--primary-color);
+    color: var(--primary-color);
+  }
+  
+  .btn-outline:hover {
+    background-color: var(--primary-color);
+    color: var(--white);
+  }
+  
+  /* Headers and Navigation */
+  header {
+    background-color: var(--white);
+    box-shadow: 0 2px 4px var(--shadow-color);
+    padding: 20px 0;
+  }
+  
+  header .logo {
+    font-size: 1.5rem;
+    font-weight: bold;
+    color: var(--primary-color);
+  }
+  
+  header nav ul {
+    list-style: none;
+    display: flex;
+    gap: 20px;
+  }
+  
+  header nav ul li a {
+    font-size: 1rem;
+    font-weight: bold;
+    color: var(--text-color);
+  }
+  
+  header nav ul li a:hover {
+    color: var(--secondary-color);
+  }
+  
+  /* Hero Section */
+  .hero {
+    background: linear-gradient(
+        to right,
+        rgba(0, 120, 215, 0.8),
+        rgba(255, 140, 0, 0.8)
+      ),
+      url('/images/hero-bg.jpg') no-repeat center center/cover;
+    color: var(--white);
+    padding: 100px 20px;
+    text-align: center;
+  }
+  
+  .hero h1 {
+    font-size: 2.5rem;
+    margin-bottom: 20px;
+  }
+  
+  .hero p {
+    font-size: 1.2rem;
+    margin-bottom: 30px;
+  }
+  
+  .hero .btn {
+    font-size: 1.1rem;
+  }
+  
+  /* Grid System */
+  .grid {
+    display: grid;
+    gap: 20px;
+  }
+  
+  .grid-2 {
+    grid-template-columns: repeat(2, 1fr);
+  }
+  
+  .grid-3 {
+    grid-template-columns: repeat(3, 1fr);
+  }
+  
+  .grid-4 {
+    grid-template-columns: repeat(4, 1fr);
+  }
+  
+  /* Services Section */
+  .services {
+    text-align: center;
+  }
+  
+  .services .service-item {
+    background-color: var(--secondary-color);
+    color: var(--white);
+    padding: 20px;
+    border-radius: 8px;
+    transition: transform 0.3s ease;
+  }
+  
+  .services .service-item:hover {
+    transform: translateY(-10px);
+  }
+  
+  /* Testimonials Section */
+  .testimonials {
+    background-color: var(--secondary-color);
+    color: var(--white);
+    padding: 40px 20px;
+    border-radius: 8px;
+  }
+  
+  .testimonial {
+    margin-bottom: 20px;
+    text-align: center;
+  }
+  
+  .testimonial .quote {
+    font-style: italic;
+    font-size: 1.1rem;
+  }
+  
+  .testimonial .author {
+    font-weight: bold;
+    margin-top: 10px;
+  }
+  
+  /* Footer */
+  footer {
+    background-color: var(--primary-color);
+    color: var(--white);
+    padding: 40px 20px;
+    text-align: center;
+  }
+  
+  footer p {
+    margin: 10px 0;
+  }
+  
+  footer a {
+    color: var(--white);
+  }
+  
+  footer a:hover {
+    text-decoration: underline;
+  }
+  
+  /* Contact Form */
+  .contact-form {
+    max-width: 600px;
+    margin: 0 auto;
+    text-align: left;
+  }
+  
+  .contact-form label {
+    display: block;
+    margin-bottom: 5px;
+    font-weight: bold;
+  }
+  
+  .contact-form input,
+  .contact-form textarea {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 15px;
+    border: 1px solid var(--border-color);
+    border-radius: 5px;
+  }
+  
+  .contact-form input[type='submit'] {
+    background-color: var(--primary-color);
+    color: var(--white);
+    border: none;
+    cursor: pointer;
+  }
+  
+  .contact-form input[type='submit']:hover {
+    background-color: var(--secondary-color);
+  }
+  
+  /* Responsive Design */
+  @media (max-width: 1024px) {
+    .grid-2,
+    .grid-3,
+    .grid-4 {
+      grid-template-columns: 1fr;
+    }
+  
+    .hero h1 {
+      font-size: 2rem;
+    }
+  
+    .hero p {
+      font-size: 1rem;
+    }
+  }
+  
