@@ -1,37 +1,36 @@
 .about-us-section {
-    padding: 50px 20px;
-    text-align: center;
-  }
-  
-  .about-us-heading {
-    font-size: 2rem;
-    margin-bottom: 30px;
-    color: #333;
-  }
-  
-  .about-us-content {
-    display: grid;
-    grid-template-columns: 1fr 1fr 1fr;
-    gap: 30px;
-    max-width: 1000px;
-    margin: 0 auto;
-  }
-  
-  .about-us-content h3 {
-    font-size: 1.5rem;
-    color: #4caf50;
-    margin-bottom: 15px;
-  }
-  
-  .about-us-content p {
-    font-size: 1rem;
-    color: #555;
-    line-height: 1.5;
-  }
-  
-  @media (max-width: 768px) {
-    .about-us-content {
-      grid-template-columns: 1fr;
-    }
-  }
-  
+  padding: 50px 20px;
+  text-align: center;
+}
+
+.about-us-heading {
+  font-size: 2rem;
+  margin-bottom: 30px;
+  color: #333;
+}
+
+.about-us-container {
+  display: flex;
+}
+
+
+.about-us-content {
+  width: 30%;
+}
+
+
+.about-us-content h3::before {
+  content: '';
+  display: inline-block;
+  width: 10px;
+  height: 10px;
+  background-color: #333;
+  border-radius: 50%;
+  margin-right: 10px;
+  vertical-align: middle;
+}
+
+
+.about-us-content h3.active::before {
+  background-color: #007BFF; /* Change this color to your desired active color */
+}
