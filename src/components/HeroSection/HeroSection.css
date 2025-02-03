@@ -47,13 +47,6 @@
   border: none;
   cursor: pointer;
   border-radius: 5px;
-}
-.cta-btn {
-  padding: 10px 20px;
-  font-size: 1rem;
-  border: none;
-  cursor: pointer;
-  border-radius: 5px;
   position: relative;
   overflow: hidden;
   z-index: 0;

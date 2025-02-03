@@ -7,6 +7,10 @@
     padding: 10px 20px;
   }
   
+
+  .navbar-logo{
+    margin-left: 40px;
+  }
   .navbar-logo a {
     color: #000;
     font-size: 28px;

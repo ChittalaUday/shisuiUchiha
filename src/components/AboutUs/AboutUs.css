@@ -1,36 +1,72 @@
 .about-us-section {
   padding: 50px 20px;
   text-align: center;
+  margin: 0 auto;
 }
 
 .about-us-heading {
-  font-size: 2rem;
+  font-size: 2.5rem;
   margin-bottom: 30px;
   color: #333;
+  font-weight: bold;
 }
 
 .about-us-container {
   display: flex;
+  justify-content: center;
+  align-items: center;
 }
 
+.about-us-container img {
+  width: 60%;
+  max-width: 500px;
+  display: block;
+  margin: 0%;
+}
+
+.about-us-description-container {
+  padding: 0 20px;
+  text-align: left;
+}
 
 .about-us-content {
-  width: 30%;
+  background-color: #fff;
+  width: fit-content;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  border-radius: 10px;
+  margin: 0 auto; 
+
+  margin-bottom: 20px;
 }
 
-
-.about-us-content h3::before {
-  content: '';
+.about-us-content a {
   display: inline-block;
-  width: 10px;
-  height: 10px;
-  background-color: #333;
-  border-radius: 50%;
-  margin-right: 10px;
-  vertical-align: middle;
+  color: #333;
+  text-decoration: none;
+  padding: 15px 25px;
+  border-radius: 5px;
+  transition: all 0.3s ease;
 }
 
+.about-us-content a:hover {
+  color: var(--secondary-color);
+}
 
-.about-us-content h3.active::before {
-  background-color: #007BFF; /* Change this color to your desired active color */
+.about-us-content a.active {
+  background-color: var(--secondary-color);
+  color: #fff;
+  border-radius: 5px;
+}
+
+@media (max-width: 768px) {
+  .about-us-container {
+    flex-direction: column;
+    text-align: left;
+  }
+  
+  .about-us-image {
+    width: 100%;
+    max-width: 250px;
+    margin-bottom: 20px;
+  }
 }
