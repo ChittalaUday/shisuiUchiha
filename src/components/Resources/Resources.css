@@ -1,64 +1,76 @@
 .resources-section {
-    padding: 50px 20px; 
-    text-align: center;
-  }
-  
-  .resources-heading {
-    font-size: 2rem;
-    margin-bottom: 30px;
-    color: #333;
-  }
-  
+  text-align: center;
+  padding: 50px 20px;
+  background: #f8f9fa;
+}
+
+.resources-heading {
+  font-size: 2rem;
+  margin-bottom: 20px;
+  color: #333;
+}
+
+.resources-container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 20px;
+}
+
+.resource-card {
+  background: white;
+  padding: 20px;
+  border-radius: 10px;
+  border: 1px solid #ddd;
+  text-align: center;
+  max-width: 280px;
+  transition: transform 0.3s ease-in-out, box-shadow 0.3s ease-in-out;
+  position: relative;
+}
+
+.resource-card:hover {
+  transform: scale(1.05);
+  box-shadow: 0px 8px 15px rgba(0, 0, 0, 0.15);
+}
+
+.resource-icon {
+  font-size: 40px;
+  color: #007bff;
+  margin-bottom: 10px;
+}
+
+.resource-title {
+  font-size: 1.3rem;
+  color: #222;
+  margin-bottom: 10px;
+}
+
+.resource-description {
+  font-size: 1rem;
+  color: #555;
+  margin-bottom: 15px;
+}
+
+.resource-link {
+  display: inline-block;
+  text-decoration: none;
+  font-weight: bold;
+  color: #007bff;
+  transition: color 0.3s ease-in-out;
+}
+
+.resource-link:hover {
+  color: #0056b3;
+}
+
+/* Responsive Styles */
+@media (max-width: 768px) {
   .resources-container {
-    display: flex;
-    justify-content: center;
-    gap: 30px;
-    flex-wrap: wrap;
+    flex-direction: column;
+    align-items: center;
   }
-  
+
   .resource-card {
-    background-color: white;
-    padding: 20px;
-    border: 1px solid #ddd;
-    border-radius: 10px;
-    width: 300px;
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-    transition: transform 0.3s ease;
+    max-width: 90%;
   }
-  
-  .resource-card:hover {
-    transform: translateY(-5px);
-  }
-  
-  .resource-title {
-    font-size: 1.5rem;
-    color: var(--primary-color);
-    margin-bottom: 15px;
-  }
-  
-  .resource-description {
-    font-size: 1rem;
-    color: #555;
-    line-height: 1.5;
-  }
-  
-  .resource-link {
-    display: inline-block;
-    margin-top: 15px;
-    font-size: 1rem;
-    color: var(--primary-color);
-    text-decoration: none;
-    font-weight: bold;
-  }
-  
-  .resource-link:hover {
-    text-decoration: underline;
-  }
-  
-  @media (max-width: 768px) {
-    .resources-container {
-      flex-direction: column;
-      align-items: center;
-    }
-  }
-  
+}

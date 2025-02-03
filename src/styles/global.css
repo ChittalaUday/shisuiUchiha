@@ -83,6 +83,11 @@
   a:hover {
     color: var(--secondary-color);
   }
+
+  input,
+  textarea {
+    background-color: var(--background-color, #f0f0f0); /* Default to light grey */
+  }
   
   /* Buttons */
   .btn {
@@ -246,7 +251,7 @@
   footer a:hover {
     text-decoration: underline;
   }
-  
+ 
   
   /* Responsive Design */
   @media (max-width: 1024px) {
