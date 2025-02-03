@@ -17,6 +17,9 @@
   }
   
   .benefit-card {
+    position: relative;
+    overflow: hidden;
+    z-index: 0;
     background-color: white;
     padding: 30px;
     border: 1px solid #ddd;
@@ -25,10 +28,26 @@
     text-align: center;
     transition: transform 0.3s ease;
   }
-  
+  .benefit-card::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: -100%;
+    width: 100%;
+    height: 100%;
+    background: var(--light-primary-color);
+    z-index: -1;
+    transition: left 0.5s ease-in-out;
+  }
+
   .benefit-card:hover {
     transform: translateY(-5px);
+  } 
+  
+  .benefit-card:hover::before {
+    left: 0;
   }
+
   
   .benefit-icon {
     font-size: 2.5rem;

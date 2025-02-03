@@ -23,7 +23,6 @@ const Homepage = () => {
       <Services />
       <Stats />
       <Testimonials />
-      <Pricing />
       <Resources />
       <ContactUs />
        </div>

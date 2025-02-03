@@ -14,7 +14,7 @@ const ClientLogoScroll = () => {
   const logos = [img1, img2, img3, img4, img5, img6, img7];
 
   return (
-    <div className="py-4 bg-gray-100">
+    <div className="slider py-4 bg-gray-100">
       <div className="slider-container mx-auto px-4">
         <Slider
           speed={10000} // Adjust the speed as needed

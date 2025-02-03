@@ -18,6 +18,10 @@
     color: var(--text-color);
     background-color: var(--background-color);
     overflow-x: hidden;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column; 
   }
   
   /* Color Variables */
@@ -35,6 +39,10 @@
     --light-primary-color: #E6F2FF; /* Main brand color */
   }
   
+  nav{
+    max-width: 1440px;
+    padding: 0px 20px;
+  }
   /* Universal Elements */
   .container {
     max-width: 1200px;
@@ -43,7 +51,9 @@
   }
 
   section{
+    max-width: 1440px;
     background-color: var(--background-color);
+    border-radius: 12px;
   }
 
   section:nth-child(odd){
@@ -237,38 +247,6 @@
     text-decoration: underline;
   }
   
-  /* Contact Form */
-  .contact-form {
-    max-width: 600px;
-    margin: 0 auto;
-    text-align: left;
-  }
-  
-  .contact-form label {
-    display: block;
-    margin-bottom: 5px;
-    font-weight: bold;
-  }
-  
-  .contact-form input,
-  .contact-form textarea {
-    width: 100%;
-    padding: 10px;
-    margin-bottom: 15px;
-    border: 1px solid var(--border-color);
-    border-radius: 5px;
-  }
-  
-  .contact-form input[type='submit'] {
-    background-color: var(--primary-color);
-    color: var(--white);
-    border: none;
-    cursor: pointer;
-  }
-  
-  .contact-form input[type='submit']:hover {
-    background-color: var(--secondary-color);
-  }
   
   /* Responsive Design */
   @media (max-width: 1024px) {
